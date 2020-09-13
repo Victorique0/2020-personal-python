@@ -26,8 +26,8 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: run
       run: |
-        python GHAnalysis.py
-        python GHAnalysis.py -i /json   
-        python GHAnalysis.py -e PushEvent -u izuzero    
-        python GHAnalysis.py -e PushEvent -r izuzero/xe-module-ajaxboard   
-        python GHAnalysis.py -e PushEvent -u hermanwahyudi -r hermanwahyudi/selenium 
+        python3 GHAnalysis.py
+        python3 GHAnalysis.py -i /json   
+        python3 GHAnalysis.py -e PushEvent -u izuzero    
+        python3 GHAnalysis.py -e PushEvent -r izuzero/xe-module-ajaxboard   
+        python3 GHAnalysis.py -e PushEvent -u hermanwahyudi -r hermanwahyudi/selenium 
