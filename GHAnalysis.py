@@ -41,12 +41,12 @@ class Date:
                             self.add_user_event(i, user_event)
                             self.add_repo_event(i, repo_event)
                             self.add_user_repo_event(i, user_repo_event)
-                with open("./1.json", "a") as f:
-                    f.write(json.dumps(user_event))
-                with open("./2.json", "a") as f:
-                    json.dump(repo_event,f)
-                with open("./3.json", "a") as f:
-                    json.dump(user_repo_event, f)
+                    with open("./1.json", "a") as f:
+                        f.write(json.dumps(user_event))
+                    with open("./2.json", "a") as f:
+                        json.dump(repo_event,f)
+                    with open("./3.json", "a") as f:
+                        json.dump(user_repo_event, f)
 
     def add_user_event(self, dic, user_event):
         id = dic["actor"]["id"]
