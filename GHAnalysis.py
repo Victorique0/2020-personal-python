@@ -2,6 +2,8 @@ import json
 import os
 import argparse
 class Date:
+
+
     def __init__(self, dict_address : str = None, reload : int = 0):
         if reload == 1:
             self.__init(dict_address)
