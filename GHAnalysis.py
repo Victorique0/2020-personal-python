@@ -27,7 +27,6 @@ class Date:
                             self.add_user_repo_event(i, user_repo_event)
                     with open("./ver2.json", "a") as f_json:
                         json.dump(user_repo_event, f_json)
-
     def add_user_repo_event(self, dic, user_repo_event):
         id = dic["actor"]["login"]
         repo = dic["repo"]["name"]
