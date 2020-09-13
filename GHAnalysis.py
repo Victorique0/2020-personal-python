@@ -37,6 +37,7 @@ class Date:
             user_repo_event[id][repo] = {"PushEvent":0,"IssueCommentEvent":0,"IssuesEvent":0,"PullRequestEvent":0}
         user_repo_event[id][repo][event] += 1
 
+
     def get_user_event(self, user, event):
         dict = self.json[user]
         num = 0
