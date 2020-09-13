@@ -57,7 +57,6 @@ class Date:
     def get_user_repo_event(self, user, repo, event):
         return self.json[user][repo][event]
 
-
 class Run:
     def __init__(self):
         self.parser = argparse.ArgumentParser()
