@@ -27,3 +27,7 @@ jobs:
     - name: run
       run: |
         python GHAnalysis.py
+        python GHAnalysis.py -i /json   
+        python GHAnalysis.py -e PushEvent -u izuzero    
+        python GHAnalysis.py -e PushEvent -r izuzero/xe-module-ajaxboard   
+        python GHAnalysis.py -e PushEvent -u hermanwahyudi -r hermanwahyudi/selenium 
